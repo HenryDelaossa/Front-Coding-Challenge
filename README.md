@@ -6,6 +6,7 @@
 ## DESCRIPCION
 
 app trivia tipo true false realizada como parte de prueba para rol como Frontend Developer.
+varia preguntas y respuestas segun datos traidos desde la api en uso para esta app.
 
 # Getting Started with Create React App
 

@@ -1,2 +1,2 @@
-export const amountQuestions = 13;
+export const amountQuestions = 10;
 export const difficultHard = 'hard'

@@ -12,7 +12,8 @@ export const CardQuestion = ({ greet }) => {
 
     /**
      * Si la respuesta del usuario es correcta, o incorrecta entonces asigna la respuesta del usuario a la propiedad myResp del objeto.
-     */
+     * Comprobación de si el número de preguntas es igual a la longitud de la matriz greet. Si lo es, entonces establece el estado showScore a true. 
+    */
     const handleAnswersTypeBoolean = (e, answer) => {
 
         if (e.target.value === answer) {
@@ -20,6 +21,7 @@ export const CardQuestion = ({ greet }) => {
         } else {
             Object.assign(greet[numQuest], { myResp: e.target.value })
         }
+
         setNumQuest(numQuest + 1)
         if (numQuest === greet.length - 1) {
             setShowScore(true)

@@ -5,7 +5,7 @@ export const NotFound = () => {
         <div className='notFoundPage'>
             <div>
                 <h1>Error:</h1>
-                <p>pagina no encontrada</p>
+                <p>Page Not Found</p>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import './showScore.css'
+// components
 import { CustomButtonLink } from '../ButtonLink/CustomButtonLink'
 
 
@@ -9,7 +10,7 @@ export const ShowScore = ({ data }) => {
             <div className='containerYouScoredText'>
                 <h3>You scored</h3>
                 <p>{score} / {data.length} </p>
-                <strong>{`${((score / data.length) * 100).toFixed(1)}%`}</strong>
+                <strong>{`${((score / data.length) * 100).toFixed(0)}%`}</strong>
             </div>
             <div className='containerQuestionsRespToScore'>
                 <div className='containerUlListQuestionsRespToScore' >

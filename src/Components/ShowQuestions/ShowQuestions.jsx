@@ -1,4 +1,6 @@
 import './showQuestions.css'
+
+
 export const ShowQuestions = ({ data, indexData, handleAnswer }) => {
     return (
         <div className='containerCardQuestions'>
@@ -10,7 +12,7 @@ export const ShowQuestions = ({ data, indexData, handleAnswer }) => {
                     </p>
                 </div>
                 <div className='divQuestionActual'>
-                    <p>{`${indexData + 1} de ${data.length}`}</p>
+                    <p>{`${indexData + 1} of ${data.length}`}</p>
                 </div>
             </div>
             <div className='containerBtnTrueFalse'>

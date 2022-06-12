@@ -1,0 +1,1 @@
+export const apiTriviaUrlBase = 'https://opentdb.com'

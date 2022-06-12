@@ -1,0 +1,39 @@
+
+.containerBtnPlayAgain {
+    padding-bottom: 2rem;
+}
+.btnBegin {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    outline: none;
+    padding: .5rem;
+    cursor: pointer;
+    -webkit-transition: border-color .4s ease;
+    -moz-transition: border-color .4s ease;
+    -o-transition: border-color .4s ease;
+    transition: border-color .4s ease;
+    animation: beginBtn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: .3s all;
+}
+
+.btnBegin:hover {
+    border-color: rgb(72, 70, 70);
+}
+
+@keyframes beginBtn {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}

@@ -1,0 +1,66 @@
+/* contenedor de lista de questions respondidas*/
+
+.containerScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerYouScoredText {
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerQuestionsRespToScore {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ulListQuestionsRespToScore {
+    margin-left: 2rem;
+    list-style-type: none;
+    padding: 2rem;
+}
+
+.ulListQuestionsRespToScore li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* respuestas correctas */
+.correctResp,
+.incorrectResp {
+    color: gray;
+    position: relative;
+}
+
+.correctResp::before,
+.correctResp::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 15px;
+    height: 3px;
+    background-color: green;
+}
+
+.correctResp::after {
+    transform: rotate(90deg);
+}
+
+/* respuestas incorrectas */
+
+.incorrectResp::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 15px;
+    height: 3px;
+    background-color: red;
+}

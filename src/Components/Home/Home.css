@@ -1,0 +1,32 @@
+/* HOME HOME HOME HOME */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.tittle {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.canScore {
+    font-weight: 500;
+}

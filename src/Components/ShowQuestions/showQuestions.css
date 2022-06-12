@@ -1,0 +1,58 @@
+/* showQuesions */
+
+.containerCardQuestions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.containerQuestion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.divQuestion {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    border: 2px solid black;
+}
+
+.divQuestionActual {
+    margin-top: 2rem;
+}
+
+.containerBtnTrueFalse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.containerBtnTrueFalse button {
+    margin: 0 1rem;
+    padding: .6rem;
+    min-width: 40%;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(209, 76, 76);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.containerBtnTrueFalse button:hover {
+    transform: translateY(-5%);
+}
+
+.containerBtnTrueFalse button:nth-child(1) {
+    background-color: rgb(106, 190, 106);
+}

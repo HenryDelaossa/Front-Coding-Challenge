@@ -6,26 +6,21 @@ import { ShowQuestions } from '../ShowQuestions/ShowQuestions'
 
 export const CardQuestion = ({ greet }) => {
 
-
     const [numQuest, setNumQuest] = useState(0)
     const [showScore, setShowScore] = useState(false)
 
     /**
-     * Si la respuesta del usuario es correcta, o incorrecta entonces asigna la respuesta del usuario a la propiedad myResp del objeto.
-     * Comprobación de si el número de preguntas es igual a la longitud de la matriz greet. Si lo es, entonces establece el estado showScore a true. 
-    */
-    const handleAnswersTypeBoolean = (e, answer) => {
+     * When the user clicks on element, the value of is assigned to the myResp
+     * property of the object in the greet array at the index of the current question number, and the
+     * question number is incremented by one.
+     */
+    const handleAnswersTypeBoolean = (e) => {
 
-        if (e.target.value === answer) {
-            Object.assign(greet[numQuest], { myResp: e.target.value })
-        } else {
-            Object.assign(greet[numQuest], { myResp: e.target.value })
-        }
+        Object.assign(greet[numQuest], { myResp: e.target.value });
+        setNumQuest(numQuest + 1);
+        if (numQuest === greet.length - 1)
+            setShowScore(true);
 
-        setNumQuest(numQuest + 1)
-        if (numQuest === greet.length - 1) {
-            setShowScore(true)
-        }
     }
 
     return (

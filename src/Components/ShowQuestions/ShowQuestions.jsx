@@ -17,13 +17,13 @@ export const ShowQuestions = ({ data, indexData, handleAnswer }) => {
             </div>
             <div className='containerBtnTrueFalse'>
                 <button
-                    onMouseDown={(e) => handleAnswer(e, data[indexData].correct_answer)}
+                    onMouseDown={(e) => handleAnswer(e)}
                     value={'True'}
                 >
                     True
                 </button>
                 <button
-                    onMouseDown={(e) => handleAnswer(e, data[indexData].incorrect_answers[0])}
+                    onMouseDown={(e) => handleAnswer(e)}
                     value={'False'}
                 >
                     False
